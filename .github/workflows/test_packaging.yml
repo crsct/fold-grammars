@@ -45,7 +45,7 @@ jobs:
       - name: update apt
         run: sudo apt-get update
       - name: Install dependencies
-        run: sudo apt-get install gapc
+        run: sudo apt-get install bellmansgapc
 
       - name: Make Application
         run: make build-${{ matrix.task[0] }}
