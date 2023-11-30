@@ -40,10 +40,9 @@ jobs:
             [hybrid, RNAhybrid],
           ]
     steps:
+      - uses: actions/checkout@v4
       - name: Add PPA
         run: sudo add-apt-repository ppa:janssenlab/software
-      - name: update apt
-        run: sudo apt-get update
       - name: Install dependencies
         run: sudo apt-get install bellmansgapc
 
